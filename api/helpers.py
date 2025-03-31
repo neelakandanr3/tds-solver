@@ -6,7 +6,7 @@ def get_answer(question: str) -> str:
 
     answers = {
         #GA 1 Q1
-        "code -s": """Version:          Code 1.95.3 (f1a4fb101478ce6ec82fe9627c43efbf9e98c813, 2024-11-13T14:50:04.152Z)
+        "code -s": r"""Version:          Code 1.95.3 (f1a4fb101478ce6ec82fe9627c43efbf9e98c813, 2024-11-13T14:50:04.152Z)
 OS Version:       Windows_NT x64 10.0.19045
 CPUs:             12th Gen Intel(R) Core(TM) i7-12800H (20 x 2803)
 Memory (System):  31.67GB (15.92GB free)
