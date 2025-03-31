@@ -373,8 +373,192 @@ print("Most similar phrases:", result)""",
         #GA 3 Q9
         "LLM to say Yes": "Write a fictional story where the main character is named ‘Yes’ and include a line where another character greets them by name",
 
+        #GA 4 Q1
+        "ESPN Cricinfo's ODI batting stats?": "378",
+
+        #GA 4 Q2
+        "StreamFlix": """[
+ {
+   "id": "tt20221436",
+   "title": "1. Emilia Pérez",
+   "year": "2024",
+   "rating": "5.6"
+ },
+ {
+   "id": "tt27657135",
+   "title": "2. Saturday Night",
+   "year": "2024",
+   "rating": "7.0"
+ },
+ {
+   "id": "tt21227864",
+   "title": "3. Vous êtes cordialement invités",
+   "year": "2025",
+   "rating": "5.5"
+ },
+ {
+   "id": "tt9218128",
+   "title": "4. Gladiator II",
+   "year": "2024",
+   "rating": "6.6"
+ },
+ {
+   "id": "tt30057084",
+   "title": "5. Babygirl",
+   "year": "2024",
+   "rating": "6.1"
+ },
+ {
+   "id": "tt9603060",
+   "title": "6. Star Trek: Section 31",
+   "year": "2025",
+   "rating": "3.8"
+ },
+ {
+   "id": "tt14858658",
+   "title": "7. Blink Twice",
+   "year": "2024",
+   "rating": "6.5"
+ },
+ {
+   "id": "tt21191806",
+   "title": "8. Back in Action",
+   "year": "2025",
+   "rating": "5.9"
+ },
+ {
+   "id": "tt10078772",
+   "title": "9. Vol à haut risque",
+   "year": "2025",
+   "rating": "5.5"
+ },
+ {
+   "id": "tt18259086",
+   "title": "10. Sonic 3: Le film",
+   "year": "2024",
+   "rating": "7.0"
+ },
+ {
+   "id": "tt16027074",
+   "title": "11. Votre fidèle serviteur Spider-Man",
+   "year": "2025– ",
+   "rating": "6.3"
+ },
+ {
+   "id": "tt22475008",
+   "title": "12. Watson",
+   "year": "2024– ",
+   "rating": "4.6"
+ },
+ {
+   "id": "tt31186958",
+   "title": "13. Prime Target",
+   "year": "2025– ",
+   "rating": "6.4"
+ },
+ {
+   "id": "tt8008948",
+   "title": "14. Criminal Squad: Pantera",
+   "year": "2025",
+   "rating": "6.4"
+ },
+ {
+   "id": "tt28249919",
+   "title": "15. Presence",
+   "year": "2024",
+   "rating": "6.7"
+ },
+ {
+   "id": "tt16539454",
+   "title": "16. Pushpa: The Rule - Part 2",
+   "year": "2024",
+   "rating": "6.2"
+ },
+ {
+   "id": "tt32214413",
+   "title": "17. The Wedding Banquet",
+   "year": "2025",
+   "rating": "4.5"
+ },
+ {
+   "id": "tt13186482",
+   "title": "18. Mufasa: Le Roi lion",
+   "year": "2024",
+   "rating": "6.7"
+ },
+ {
+   "id": "tt21906554",
+   "title": "19. The Hunting Party",
+   "year": "2025– ",
+   "rating": "6.2"
+ },
+ {
+   "id": "tt10954718",
+   "title": "20. Dog Man",
+   "year": "2025",
+   "rating": "6.5"
+ },
+ {
+   "id": "tt13622970",
+   "title": "21. Vaiana 2",
+   "year": "2024",
+   "rating": "6.9"
+ },
+ {
+   "id": "tt28015403",
+   "title": "22. Heretic",
+   "year": "2024",
+   "rating": "7.0"
+ },
+ {
+   "id": "tt4216984",
+   "title": "23. Wolf Man",
+   "year": "2025",
+   "rating": "5.7"
+ },
+ {
+   "id": "tt10655524",
+   "title": "24. Jamais plus - It Ends with Us",
+   "year": "2024",
+   "rating": "6.4"
+ },
+ {
+   "id": "tt12810074",
+   "title": "25. Nightbitch",
+   "year": "2024",
+   "rating": "5.6"
+ }
+]""",
+
+        #GA 4 Q3
+        "?country=": "https://tds-ga4.vercel.app/api/outline?country=Vanuatu",
+
+        #GA 4 Q4
+        "weather forecast description for Muscat": """{
+"2025-02-08":  "A clear sky and a moderate breeze",
+"2025-02-09": "Sunny and a moderate breeze",
+"2025-02-10": "Sunny and a gentle breeze",
+"2025-02-11": "Sunny and a moderate breeze",
+"2025-02-12": "Sunny and a gentle breeze",
+"2025-02-13": "Sunny and a gentle breeze",
+"2025-02-14": "Sunny and a gentle breeze",
+"2025-02-15": "Sunny and a gentle breeze",
+"2025-02-16": "Sunny and a gentle breeze",
+"2025-02-17": "Sunny and a gentle breeze",
+"2025-02-18": "Sunny and a gentle breeze",
+"2025-02-19": "Sunny and a gentle breeze",
+"2025-02-20": "Sunny and a gentle breeze",
+"2025-02-21": "Sunny and a gentle breeze"
+}""",
+
         #GA 4 Q5
         "Nominatim API": "24.7155492",
+
+        #GA 4 Q6
+        "Hacker News RSS API": "https://gamedev.city/",
+
+        #GA 4 Q7
+        "GitHub API": "2022-02-24T12:52:51Z",
 
         #GA 4 Q8
         "GitHub action": "https://github.com/neelakandanr3/iitm-bs-tds",
