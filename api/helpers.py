@@ -174,6 +174,9 @@ Workspace Stats:
         #GA 1 Q14
         "in upper, lower, or mixed case": "38e1d51db7e2c9952ef886b6e3c075b8ecfb54b2c6a51dd12ee7437b84dda114 *-",
 
+        #GA 1 Q15
+        "Thu, 5 Sept, 2013, 2:31 pm IST": "138998",
+
         "grep . * | lc_all=c sort | sha256sum": "cd83d547babe3e0ae6ccc22f77a9b04c1afefe71a7a35758009b4af9e14001d1 *-",
 
         "a.txt and b.txt": "35",
