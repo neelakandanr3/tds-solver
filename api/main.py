@@ -24,19 +24,28 @@ async def handle_question(
 ):
     logger.info(f"Received question: {question}")
 
-    # Ensure files are saved even if empty
     if file:
+        # Save the uploaded file
         file_path = ROOT_DIR / file.filename
         try:
             with file_path.open("wb") as buffer:
                 shutil.copyfileobj(file.file, buffer)
-
-            # Ensure an empty file is created if nothing was written
-            if file_path.stat().st_size == 0:
-                file_path.touch()
-
+            
             logger.info(f"File saved: {file_path} (Size: {file_path.stat().st_size} bytes)")
         except Exception as e:
             logger.error(f"Error saving file: {e}")
+    else:
+        # Try to extract a filename from the question
+        filename = None
+
+        for word in question.split():
+            if "@" in word and "." in word:  # Looks like a filename
+                filename = word.split("@")[-1].strip()
+                break
+
+        if filename:
+            file_path = ROOT_DIR / filename
+            file_path.touch()  # Create an empty file with the extracted filename
+            logger.info(f"No file uploaded. Created empty file: {file_path}")
 
     return {"answer": get_answer(question)}
