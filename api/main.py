@@ -1,6 +1,7 @@
 from fastapi import FastAPI, Form, File, UploadFile
+from fastapi.responses import JSONResponse
 import logging
-from api.helpers import get_answer  
+from api.helpers import get_answer
 
 app = FastAPI()
 
@@ -17,4 +18,7 @@ async def handle_question(
     question: str = Form(...),
     file: UploadFile | None = File(None)  # Optional file
 ):
-    return {"answer": get_answer(question)}
+    answer = get_answer(question)
+    
+    # Ensure clean JSON output
+    return JSONResponse(content={"answer": answer})
