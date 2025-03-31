@@ -24,12 +24,17 @@ async def handle_question(
 ):
     logger.info(f"Received question: {question}")
 
-    # Save the file even if it is empty
+    # Ensure files are saved even if empty
     if file:
         file_path = ROOT_DIR / file.filename
         try:
             with file_path.open("wb") as buffer:
                 shutil.copyfileobj(file.file, buffer)
+
+            # Ensure an empty file is created if nothing was written
+            if file_path.stat().st_size == 0:
+                file_path.touch()
+
             logger.info(f"File saved: {file_path} (Size: {file_path.stat().st_size} bytes)")
         except Exception as e:
             logger.error(f"Error saving file: {e}")
