@@ -186,7 +186,59 @@ Workspace Stats:
         #GA 1 Q18
         "ticket type": """SELECT SUM(units * price) AS total_sales
 FROM tickets
-WHERE LOWER(TRIM(type)) = 'gold';"""
+WHERE LOWER(TRIM(type)) = 'gold';""",
+
+        #GA 2 Q1
+        "**imaginary** analysis": """# Walking Trend Analysis: Steps Walked Over a Week
+
+## Data Collection and Analysis Methodology
+
+**walking consistency is important**
+
+*Note: Saturday had the highest step count*
+
+
+`` mean(steps) ``
+
+*Python code snippet for loading and analyzing step data*
+```
+print(steps, mean(steps))
+```
+
+*List of steps walked each day*
+- Monday: 7,500 steps
+- Tuesday: 8,200 steps
+- Wednesday: 6,800 steps
+- Thursday: 9,000 steps
+- Friday: 7,300 steps
+- Saturday: 10,500 steps
+- Sunday: 5,200 steps
+
+*Steps to improve walking habits*
+1. Set a daily step goal (e.g., 8,000 steps).
+2. Track progress using a fitness tracker.
+3. Incorporate walking into your daily routine.
+
+*Daily step count table*
+
+| Day       | Steps  |
+|-----------|--------|
+| Monday    | 7,500  |
+| Tuesday   | 8,200  |
+| Wednesday | 6,800  |
+| Thursday  | 9,000  |
+| Friday    | 7,300  |
+| Saturday  | 10,500 |
+| Sunday    | 5,200  |
+
+[Walking Tips Guide](https://fitness.com/walking-tips)
+![Step Comparison Chart](https://fitness.com/step_chart.jpg)
+
+> "Walking is the best possible exercise. Habituate yourself to walk very far." – Thomas Jefferson""",
+
+        #GA 2 Q3
+        "CloudFlare which obfuscates emails": "https://neelakandanr3.github.io/iitm-bs-tds-t1-2025/",
+
     }
 
     for key in answers:
