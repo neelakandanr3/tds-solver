@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Form, File, UploadFile
-from helpers import get_answer
+from api.helpers import get_answer
 
 app = FastAPI()
 
