@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Form, UploadFile, File
 import logging
-from helpers import get_answer  # Import the helper function
+from api.helpers import get_answer  # Import the helper function
 
 app = FastAPI()
 
