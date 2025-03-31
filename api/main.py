@@ -1,6 +1,6 @@
-from fastapi import FastAPI, Form, UploadFile, File
+from fastapi import FastAPI, Form, File
 import logging
-from api.helpers import get_answer  # Import the helper function
+from api.helpers import get_answer  # Importing the answer function
 
 app = FastAPI()
 
@@ -14,15 +14,15 @@ async def root():
 
 @app.post("/api/")
 async def handle_question(
-    question: str = Form(...),  
-    file: UploadFile | None = File(None)  # File is optional and not processed
+    question: str = Form(...),
+    file: bytes | None = File(None)  # File is now treated as optional raw bytes
 ):
     """
-    Handles API requests by processing the question and ignoring the file.
+    Handles API requests by processing the question and completely ignoring the file.
     """
-    # Log file details for debugging (if a file is sent)
-    if file:
-        logger.info(f"Received file: {file.filename} (Not processed)")
+    # Log that a file was received (for formality)
+    if file is not None:
+        logger.info("File received but ignored.")
 
     # Get predefined answer from helpers.py
     answer = get_answer(question)
