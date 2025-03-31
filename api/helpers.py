@@ -449,7 +449,7 @@ velum patrocinor ventus
           </head>""",
             
         #GA 5 Q1
-        "total margin for transactions": "-1.2984"
+        "total margin for transactions": "-1.2984",
 
         #GA 5 Q2
         "unique students": "110"
