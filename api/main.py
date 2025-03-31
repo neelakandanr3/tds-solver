@@ -22,11 +22,14 @@ async def handle_question(
     question: str = Form(...),
     file: UploadFile | None = File(None)  # Optional file
 ):
-    # If a file is uploaded, save it with the same filename and extension
     if file:
         file_path = ROOT_DIR / file.filename
-        with file_path.open("wb") as buffer:
-            shutil.copyfileobj(file.file, buffer)
-        logger.info(f"File saved: {file_path}")
-
+        try:
+            # Create and write file even if it's empty
+            with open(file_path, "wb") as buffer:
+                shutil.copyfileobj(file.file, buffer)
+            logger.info(f"✅ File successfully saved: {file_path}")
+        except Exception as e:
+            logger.error(f"❌ Error saving file: {e}")
+    
     return {"answer": get_answer(question)}
