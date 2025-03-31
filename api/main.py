@@ -4,6 +4,6 @@ from api.helpers import get_answer
 app = FastAPI()
 
 @app.post("/api/")
-async def answer_question(question: str = Form(...), file: UploadFile = None):
-    answer = get_answer(question, file)
-    return {"answer": answer}
+async def solve_question(question: str = Form(...), file: UploadFile = File(None)):
+    # Placeholder response – modify this to return actual answers
+    return {"answer": "1234567890"}
