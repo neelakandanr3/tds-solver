@@ -36,7 +36,7 @@ GPU Status:       webgl2: enabled""",
 
         "create a github account": "https://raw.githubusercontent.com/neelakandanr3/iitm-bs-tds-t1-2025/refs/heads/main/email.json",
 
-        'replace all "iitm"': "38e1d51db7e2c9952ef886b6e3c075b8ecfb54b2c6a51dd12ee7437b84dda114 *-",
+        "cat * | sha256sum": "38e1d51db7e2c9952ef886b6e3c075b8ecfb54b2c6a51dd12ee7437b84dda114 *-",
 
         "grep . * | lc_all=c sort | sha256sum": "cd83d547babe3e0ae6ccc22f77a9b04c1afefe71a7a35758009b4af9e14001d1 *-",
 
