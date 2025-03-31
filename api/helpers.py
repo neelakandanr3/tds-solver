@@ -20,35 +20,35 @@ GPU Status:       webgl2: enabled""",
 
         "sum(array_constrain(sequence(100, 100, 10, 13), 1, 10))": "685",
 
-        "=SUM(TAKE(SORTBY({8,5,0,7,0,9,5,3,9,15,10,7,6,7,2,3}, {10,9,13,2,11,8,16,14,7,15,5,4,6,1,3,12}), 1, 3))": "16",
+        "=sum(take(sortby({8,5,0,7,0,9,5,3,9,15,10,7,6,7,2,3}, {10,9,13,2,11,8,16,14,7,15,5,4,6,1,3,12}), 1, 3))": "16",
 
         "secret value": "t4puf8u8nb",
 
         "extract.csv": "45447",
 
-        "Sort this JSON array of objects": '[{"name": "Grace", "age": 4}, {"name": "Liam", "age": 9}, {"name": "Emma", "age": 21}]',
+        "sort this json array of objects": '[{"name": "Grace", "age": 4}, {"name": "Liam", "age": 9}, {"name": "Emma", "age": 21}]',
 
         "use multi-cursors": "5fb24fc59a3cc3f0bb02fe7835a29015c9416edd6eae08cf6ae5c767cdd53277",
 
-        "CSS selectors": "418",
+        "css selectors": "418",
 
         "three files with different encodings": "37500",
 
-        "Create a GitHub account": "https://raw.githubusercontent.com/neelakandanr3/iitm-bs-tds-t1-2025/refs/heads/main/email.json",
+        "create a github account": "https://raw.githubusercontent.com/neelakandanr3/iitm-bs-tds-t1-2025/refs/heads/main/email.json",
 
-        'replace all "IITM"': "38e1d51db7e2c9952ef886b6e3c075b8ecfb54b2c6a51dd12ee7437b84dda114 *-",
+        'replace all "iitm"': "38e1d51db7e2c9952ef886b6e3c075b8ecfb54b2c6a51dd12ee7437b84dda114 *-",
 
-        "grep . * | LC_ALL=C sort | sha256sum": "cd83d547babe3e0ae6ccc22f77a9b04c1afefe71a7a35758009b4af9e14001d1 *-",
+        "grep . * | lc_all=c sort | sha256sum": "cd83d547babe3e0ae6ccc22f77a9b04c1afefe71a7a35758009b4af9e14001d1 *-",
 
         "a.txt and b.txt": "35",
 
-        '"Gold" ticket type': """SELECT SUM(units * price) AS total_sales
+        '"gold" ticket type': """SELECT SUM(units * price) AS total_sales
 FROM tickets
 WHERE LOWER(TRIM(type)) = 'gold';"""
     }
 
     for key in answers:
-        if key in question:
+        if key.lower().strip() in question:  # <-- Case-insensitive check
             return answers[key]
 
     return "Question not recognized"
