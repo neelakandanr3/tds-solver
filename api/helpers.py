@@ -177,11 +177,14 @@ Workspace Stats:
         #GA 1 Q15
         "Thu, 5 Sept, 2013, 2:31 pm IST": "138998",
 
+        #GA 1 Q16
         "grep . * | lc_all=c sort | sha256sum": "cd83d547babe3e0ae6ccc22f77a9b04c1afefe71a7a35758009b4af9e14001d1 *-",
 
+        #GA 1 Q17
         "a.txt and b.txt": "35",
 
-        '"gold" ticket type': """SELECT SUM(units * price) AS total_sales
+        #GA 1 Q18
+        "ticket type": """SELECT SUM(units * price) AS total_sales
 FROM tickets
 WHERE LOWER(TRIM(type)) = 'gold';"""
     }
