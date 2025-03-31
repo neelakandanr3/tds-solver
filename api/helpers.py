@@ -304,7 +304,7 @@ except Exception as e:
         "Nominatim API": "24.7155492",
 
         #GA 4 Q8
-        "Nominatim API": "https://github.com/neelakandanr3/iitm-bs-tds",
+        "GitHub action": "https://github.com/neelakandanr3/iitm-bs-tds",
 
         #GA 4 Q9
         "scored 76 or more marks in Maths": "22701",
