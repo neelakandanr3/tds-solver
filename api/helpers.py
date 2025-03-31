@@ -5,6 +5,7 @@ def get_answer(question: str) -> str:
     question = question.lower().strip()
 
     answers = {
+        #GA 1 Q1
         "code -s": """Version:          Code 1.95.3 (f1a4fb101478ce6ec82fe9627c43efbf9e98c813, 2024-11-13T14:50:04.152Z)
 OS Version:       Windows_NT x64 10.0.19045
 CPUs:             12th Gen Intel(R) Core(TM) i7-12800H (20 x 2803)
@@ -14,16 +15,25 @@ Screen Reader:    no
 Process Argv:     --crash-reporter-id 2b6d6fb4-b3ac-483b-9b02-36eacb1ee122
 GPU Status:       webgl2: enabled""",
         
+        #GA 1 Q2
         "httpbin.org/get": '{"args":{"email":"23f1000529@ds.study.iitm.ac.in"},"headers":{"Accept":"*/*","User-Agent":"HTTPie/3.2.1"},"url":"https://httpbin.org/get?email=23f1000529@ds.study.iitm.ac.in"}',
-
+        
+        #GA 1 Q3
         "npx -y prettier@3.4.2 readme.md | sha256sum": "627ae98894ab61ae62f738cb7ad66aa55f207b39f49021d26e9fe0c278bc5873 CertUtil: -hashfile command completed successfully.",
 
+        #GA 1 Q4
         "sum(array_constrain(sequence(100, 100, 10, 13), 1, 10))": "685",
 
+        #GA 1 Q5
         "=sum(take(sortby({8,5,0,7,0,9,5,3,9,15,10,7,6,7,2,3}, {10,9,13,2,11,8,16,14,7,15,5,4,6,1,3,12}), 1, 3))": "16",
 
+        #GA 1 Q6
         "secret value": "t4puf8u8nb",
 
+        #GA 1 Q7
+        "1982-02-28 to 2014-06-25": "1687",
+
+        #GA 1 Q8
         "extract.csv": "45447",
 
         "sort this json array of objects": '[{"name": "Grace", "age": 4}, {"name": "Liam", "age": 9}, {"name": "Emma", "age": 21}]',
